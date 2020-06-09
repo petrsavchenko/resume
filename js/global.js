@@ -29,7 +29,11 @@ $(document).ready(function(){
 	
 	// ColorBox call
 	// $(".colophon-call").colorbox({width:"460px", inline:true, href:"#colophon-notes"});
-	
+	$(".colophon-call").click(function(){
+		$('#cat').show();
+		var scrollToX = 2310 - $(window).height();
+		$('html, body').animate({ scrollTop: scrollToX }, 4500, 'easeInOutExpo');
+	})
 });
 
 
@@ -51,7 +55,7 @@ $(window).load(function () {
 	// smooth scroll to scrollToX
 	// current easing: "easeInOutExpo", for more easing methods please visit: http://gsgd.co.uk/sandbox/jquery/easing/
 	if (position < scrollToX) {
-		$('html, body').animate({ scrollTop: scrollToX }, 4500, 'easeInOutExpo');
+		// $('html, body').animate({ scrollTop: scrollToX }, 4500, 'easeInOutExpo');
 	}
 	
 });

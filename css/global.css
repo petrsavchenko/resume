@@ -273,8 +273,8 @@ div#brand p.copyright span {
 }
 
 div#brand p.copyright a {
-	top: 406px;
-	left: 646px;
+	top: 399px;
+	left: 689px;
 	z-index: 101;
 	width: 66px;
 	height: 56px;
@@ -797,7 +797,8 @@ body {
 }
 
 .cat {
-    position: relative;
+	position: relative;
+	display: none;
 	height: 510px;
 	padding: 85px 0 100px 0;
 }
