@@ -105,7 +105,8 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 20px; /* Baseline grid of 20px */
-	background: #0E2630;
+	background: #0E2630 url(../img/layout/page-loading.gif) center center no-repeat;
+	overflow-x: hidden;
 }
 
 a:link,
@@ -370,7 +371,7 @@ div#social a:hover {
 	filter: alpha(opacity=60);
 }
 
-div#social .vk {
+div#social .instagram {
 	z-index: 20;
 	top: 130px;
 	left: 10px;
@@ -378,19 +379,28 @@ div#social .vk {
 	height: 106px;
 }
 
-div#social .vk a {
+div#social .instagram a {
 	width: 150px;
 	height: 106px;
-	background-image: url(../img/layout/balloon-social-item-vk.png);
+	background-image: url(../img/layout/balloon-social-item-instagram.png);
 }
 
-div#social .smile {
+/* div#social .smile {
 	z-index: 61;
 	top: 12px;
 	left: 340px;
 	width: 88px;
 	height: 82px;
 	background-image: url(../img/layout/balloon-social-comment-smile.png);
+} */
+
+div#social .blah {
+	z-index: 61;
+	top: 10px;
+	left: 344px;
+	width: 88px;
+	height: 82px;
+	background-image: url(../img/layout/balloon-social-comment-blah.png);
 }
 
 div#social .blogger {
@@ -792,8 +802,11 @@ div#floating-talk .float-floating-response {
 
 /*CATTY */
 
-body {
-	overflow-x: hidden;
+@font-face {
+    font-family: 'suplexmentary-comic-NC';
+    src: url('../fonts/suplexmentary-comic-NC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .cat {
@@ -801,12 +814,13 @@ body {
 	display: none;
 	height: 510px;
 	padding: 85px 0 100px 0;
+	background: #036;
 }
 
 .cat h2
 {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "suplexmentary-comic-NC", Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	margin: 0;
 	font-size: 3em;
