@@ -14,7 +14,7 @@ $(document).ready(function(){
 	$('a[class!=url][class!=tca-honor-design non-html][class!=tca-site-day non-html][class!=tca-site-month non-html]').each(
 		function () {
 			$(this).css({backgroundPosition: '5px 5px'});
-			bounce(this);
+			// bounce(this);
 		}
 	);
 	

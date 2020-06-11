@@ -203,14 +203,14 @@ div#work {
 	background: transparent url(../img/layout/balloon-chalk-frame-work.png) center center no-repeat;
 }
 
-div#projects {
+div#tools {
 	position: absolute;
 	z-index: 50;
 	top: 100px;
 	left: 120px;
 	width: 660px;
 	height: 520px;
-	background: transparent url(../img/layout/balloon-chalk-frame-projects.png) center center no-repeat;
+	background: transparent url(../img/layout/balloon-chalk-frame-tools.png) center center no-repeat;
 }
 
 div#floating-talk {
@@ -352,11 +352,11 @@ div#social * {
 
 div#social h2 {
 	position: absolute;
-	top: 10px;
-	left: 100px;
-	width: 187px;
-	height: 50px;
-	z-index: 10;
+	top: 3px;
+    left: 91px;
+    width: 213px;
+    height: 57px;
+    z-index: 10;
 	background-image: url(../img/layout/hd-social.png);
 }
 
@@ -373,14 +373,14 @@ div#social a:hover {
 
 div#social .instagram {
 	z-index: 20;
-	top: 130px;
-	left: 10px;
-	width: 150px;
+	top: 53px;
+	left: 91px;
+	width: 200px;
 	height: 106px;
 }
 
 div#social .instagram a {
-	width: 150px;
+	width: 200px;
 	height: 106px;
 	background-image: url(../img/layout/balloon-social-item-instagram.png);
 }
@@ -403,50 +403,50 @@ div#social .blah {
 	background-image: url(../img/layout/balloon-social-comment-blah.png);
 }
 
-div#social .blogger {
+div#social .linkedIn {
 	z-index: 30;
-	top: 200px;
-	left: 100px;
-	width: 202px;
+	top: 161px;
+	left: 228px;
+	width: 140px;
 	height: 110px;
 }
 
-div#social .blogger a {
-	width: 202px;
+div#social .linkedIn a {
+	width: 140px;
 	height: 110px;
-	background-image: url(../img/layout/balloon-social-item-blogger.png);
+	background-image: url(../img/layout/balloon-social-item-linkedin.png);
 }
 
-div#social .write {
+div#social .job {
 	z-index: 31;
-	top: 250px;
-	left: 10px;
-	width: 120px;
+	top: 178px;
+	left: 342px;
+	width: 90px;
 	height: 73px;
-	background-image: url(../img/layout/balloon-social-comment-write.png);
+	background-image: url(../img/layout/balloon-social-comment-job.png);
 }
 
-div#social .twitter {
+div#social .github {
 	z-index: 40;
-	top: 100px;
-	left: 160px;
-	width: 130px;
+	top: 159px;
+	left: 64px;
+	width: 150px;
 	height: 100px;
 }
 
-div#social .twitter a {
-	width: 130px;
+div#social .github a {
+	width: 150px;
 	height: 100px;
-	background-image: url(../img/layout/balloon-social-item-twitter.png);
+	background-image: url(../img/layout/balloon-social-item-github.png);
 }
 
-div#social .rarely {
+div#social .code {
 	z-index: 41;
-	top: 48px;
-	left: 210px;
-	width: 64px;
-	height: 66px;
-	background-image: url(../img/layout/balloon-social-comment-rarely.png);
+	top: 115px;
+	left: 19px;
+	width: 88px;
+	height: 80px;
+	background-image: url(../img/layout/balloon-social-comment-code.png);
 }
 
 div#social .facebook {
@@ -465,8 +465,8 @@ div#social .facebook a {
 
 div#social .love {
 	z-index: 21;
-	top: 70px;
-	left: 65px;
+	top: 6px;
+	left: 258px;
 	width: 72px;
 	height: 76px;
 	background-image: url(../img/layout/balloon-social-comment-love.png);
@@ -511,33 +511,33 @@ div#work .company {
 	height: 148px;
 }
 
-div#work .company a.crazy-assembly {
+div#work .company a.plutora {
 	width: 224px;
 	height: 148px;
-	background-image: url(../img/layout/balloon-work-item-crazy-assembly.png);
+	background-image: url(../img/layout/balloon-work-item-plutora.png);
 }
 
-div#work .crazy-ideas {
+div#work .enterprise-software {
 	z-index: 21;
 	top: 60px;
 	left: 0;
 	width: 96px;
 	height: 90px;
-	background-image: url(../img/layout/balloon-work-comment-crazy-ideas.png);
+	background-image: url(../img/layout/balloon-work-item-plutora-enterprise-software.png);
 }
 
-div#work .other-reality {
+div#work .vsm {
 	z-index: 22;
 	top: 20px;
 	left: 230px;
 	width: 120px;
 	height: 90px;
-	background-image: url(../img/layout/balloon-work-comment-other-reality.png);
+	background-image: url(../img/layout/balloon-work-item-plutora-vsm.png);
 }
 /* END Work */
 
-/* BEGIN Projects */
-div#projects * {
+/* BEGIN tools */
+div#tools * {
 	text-indent: -9999px;
 	overflow: hidden;
 	display: block;
@@ -546,32 +546,32 @@ div#projects * {
 	background-position: center center;
 }
 
-div#projects em {
+div#tools em {
 	display: inline;
 }
 
-div#projects h2 {
+div#tools h2 {
 	position: absolute;
-	top: 4px;
-	left: 180px;
-	width: 190px;
-	height: 28px;
-	z-index: 10;
-	background-image: url(../img/layout/hd-projects.png);
+    top: 0px;
+    left: 176px;
+    width: 197px;
+    height: 34px;
+    z-index: 10;
+	background-image: url(../img/layout/hd-tools.png);
 }
 
-div#projects dt, div#projects span, div#projects dd a { position: absolute;}
+div#tools dt, div#tools span, div#tools dd a { position: absolute;}
 
-div#projects dl, div#projects dt, div#projects dd { overflow: visible; }
+div#tools dl, div#tools dt, div#tools dd { overflow: visible; }
 
-div#projects a:hover {
+div#tools a:hover {
 	background-position: 0 10px;
 	opacity: .6;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 	filter: alpha(opacity=60);
 }
 
-/* div#projects .datm {
+/* div#tools .datm {
 	z-index: 50;
 	top: 70px;
 	left: 60px;
@@ -579,31 +579,31 @@ div#projects a:hover {
 	height: 164px;
 }
 
-div#projects .datm a {
+div#tools .datm a {
 	width: 222px;
 	height: 164px;
-	background-image: url(../img/layout/balloon-projects-item-datm.png);
+	background-image: url(../img/layout/balloon-tools-item-datm.png);
 } */
 
-div#projects .band {
+div#tools .band {
 	z-index: 51;
 	top: 14px;
 	left: 70px;
 	width: 74px;
 	height: 80px;
-	background-image: url(../img/layout/balloon-projects-comment-band.png);
+	background-image: url(../img/layout/balloon-tools-comment-band.png);
 }
 
-div#projects .shake {
+div#tools .shake {
 	z-index: 52;
 	top: 160px;
 	left: 0;
 	width: 94px;
 	height: 106px;
-	background-image: url(../img/layout/balloon-projects-comment-shake.png);
+	background-image: url(../img/layout/balloon-tools-comment-shake.png);
 }
 
-div#projects .crowdadvertising {
+div#tools .crowdadvertising {
 	z-index: 40;
 	top: 148px;
 	left: 252px;
@@ -611,31 +611,31 @@ div#projects .crowdadvertising {
 	height: 128px;
 }
 
-div#projects .crowdadvertising a {
+div#tools .crowdadvertising a {
 	width: 278px;
 	height: 128px;
-	background-image: url(../img/layout/balloon-projects-item-crowdadvertising.png);
+	background-image: url(../img/layout/balloon-tools-item-crowdadvertising.png);
 }
 
-div#projects .tatoos {
+div#tools .tatoos {
 	z-index: 41;
 	top: 58px;
 	left: 310px;
 	width: 94px;
 	height: 106px;
-	background-image: url(../img/layout/balloon-projects-comment-tatoos.png);
+	background-image: url(../img/layout/balloon-tools-comment-tatoos.png);
 }
 
-div#projects .through-people {
+div#tools .through-people {
 	z-index: 42;
 	top: 200px;
 	left: 504px;
 	width: 128px;
 	height: 120px;
-	background-image: url(../img/layout/balloon-projects-comment-through-people.png);
+	background-image: url(../img/layout/balloon-tools-comment-through-people.png);
 }
 
-div#projects .new {
+div#tools .new {
 	z-index: 60;
 	top: 50px;
 	left: 460px;
@@ -643,31 +643,31 @@ div#projects .new {
 	height: 134px;
 }
 
-div#projects .new a {
+div#tools .new a {
 	width: 146px;
 	height: 134px;
-	background-image: url(../img/layout/balloon-projects-item-new.png);
+	background-image: url(../img/layout/balloon-tools-item-new.png);
 }
 
-div#projects .excite-imagination {
+div#tools .excite-imagination {
 	z-index: 61;
 	top: 0;
 	left: 400px;
 	width: 98px;
 	height: 92px;
-	background-image: url(../img/layout/balloon-projects-comment-excite-imagination.png);
+	background-image: url(../img/layout/balloon-tools-comment-excite-imagination.png);
 }
 
-div#projects .rock {
+div#tools .rock {
 	z-index: 62;
 	top: 48px;
 	left: 588px;
 	width: 60px;
 	height: 62px;
-	background-image: url(../img/layout/balloon-projects-comment-rock.png);
+	background-image: url(../img/layout/balloon-tools-comment-rock.png);
 }
 
-div#projects .bolt {
+div#tools .bolt {
 	z-index: 30;
 	top: 250px;
 	left: 170px;
@@ -675,39 +675,39 @@ div#projects .bolt {
 	height: 194px;
 }
 
-div#projects .bolt a {
+div#tools .bolt a {
 	width: 246px;
 	height: 194px;
-	background-image: url(../img/layout/balloon-projects-item-bolt.png);
+	background-image: url(../img/layout/balloon-tools-item-bolt.png);
 }
 
-div#projects .not-startup {
+div#tools .not-startup {
 	z-index: 31;
 	top: 230px;
 	left: 90px;
 	width: 108px;
 	height: 96px;
-	background-image: url(../img/layout/balloon-projects-comment-not-startup.png);
+	background-image: url(../img/layout/balloon-tools-comment-not-startup.png);
 }
 
-/* div#projects .cc {
+/* div#tools .cc {
 	z-index: 32;
 	top: 360px;
 	left: 100px;
 	width: 110px;
 	height: 94px;
-	background-image: url(../img/layout/balloon-projects-comment-cc.png);
+	background-image: url(../img/layout/balloon-tools-comment-cc.png);
 } */
 
-div#projects .just-business {
+div#tools .just-business {
 	z-index: 33;
 	top: 300px;
 	left: 370px;
 	width: 130px;
 	height: 110px;
-	background-image: url(../img/layout/balloon-projects-comment-just-business.png);
+	background-image: url(../img/layout/balloon-tools-comment-just-business.png);
 }
-/* END Projects */
+/* END tools */
 
 /* BEGIN Floatink Talk */
 div#floating-talk * {
