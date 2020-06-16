@@ -315,10 +315,19 @@ div#brand p.contact a.email {
 	background-image: url(../img/layout/balloon-float-email.png);
 }
 
-div#brand img.petr-savchenko-illustration{
+div#brand img.petr-savchenko-illustration {
 	top: 158px;
 	left: 464px;
 	z-index: 60;
+}
+
+div#brand img.au-flag {
+	top: 323px;
+	left: 552px;
+	width: 20px;
+    height: 12px;
+    opacity: 0.7;
+	z-index: 61;
 }
 
 div#brand img.big-tree {
