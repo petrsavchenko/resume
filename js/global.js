@@ -14,7 +14,7 @@ $(document).ready(function(){
 	$('a[class!=url][class!=tca-honor-design non-html][class!=tca-site-day non-html][class!=tca-site-month non-html]').each(
 		function () {
 			$(this).css({backgroundPosition: '5px 5px'});
-			// bounce(this);
+			bounce(this);
 		}
 	);
 	
@@ -28,12 +28,12 @@ $(document).ready(function(){
 	
 	
 	// ColorBox call
-	// $(".colophon-call").colorbox({width:"460px", inline:true, href:"#colophon-notes"});
-	$(".colophon-call").click(function(){
-		$('#cat').show();
-		var scrollToX = 2310 - $(window).height();
-		$('html, body').animate({ scrollTop: scrollToX }, 4500, 'easeInOutExpo');
-	})
+	$(".colophon-call").colorbox({width:"460px", inline:true, href:"#colophon-notes"});
+	// $(".colophon-call").click(function(){
+	// 	$('#cat').show();
+	// 	var scrollToX = 2310 - $(window).height();
+	// 	$('html, body').animate({ scrollTop: scrollToX }, 4500, 'easeInOutExpo');
+	// })
 });
 
 

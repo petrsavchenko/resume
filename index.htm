@@ -3,18 +3,52 @@
 	<head>
 		<meta charset="utf-8">
         <title>Petr Savchenko</title>
+        <link href="css/colorbox.css" rel="stylesheet" type="text/css" media="screen">
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link href="css/global.css" rel="stylesheet" type="text/css" media="screen">
+        
         <link rel="stylesheet" href="css/nyan.css" />
                 
         <script src="js/jquery-1.4.1.min.js"></script>
         <script src="js/jquery.backgroundPosition.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.colorbox.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/global.js"></script>
         <script src="js/nyan.js"></script>
 	</head>
 	<body>
+        <div id="cboxOverlay" style="display: none;"></div>
+        <div id="colorbox" style="padding-bottom: 57px; padding-right: 28px; display: none;">
+            <div id="cboxWrapper">
+                <div>
+                    <div id="cboxTopLeft" style="float: left;"></div>
+                    <div id="cboxTopCenter" style="float: left;"></div>
+                    <div id="cboxTopRight" style="float: left;"></div>
+                </div>
+                <div>
+                    <div id="cboxMiddleLeft" style="float: left;"></div>
+                    <div id="cboxContent" style="float: left;">
+                        <div id="cboxLoadedContent" class=" " style="width: 0px; height: 0px;"></div>
+                        <div id="cboxLoadingOverlay" class=" "></div>
+                        <div id="cboxLoadingGraphic" class=" "></div>
+                        <div id="cboxTitle" class=" "></div>
+                        <div id="cboxCurrent" class=" "></div>
+                        <div id="cboxSlideshow" class=" "></div>
+                        <div id="cboxNext" class=" "></div>
+                        <div id="cboxPrevious" class=" "></div>
+                        <div id="cboxClose" class=" "></div>
+                        <div id="cboxMiddleRight" style="float: left;"></div>
+                    </div>
+                    <div>
+                        <div id="cboxBottomLeft" style="float: left;"></div>
+                        <div id="cboxBottomCenter" style="float: left;"></div>
+                        <div id="cboxBottomRight" style="float: left;"></div>
+                    </div>
+                </div>
+                <div style="position:absolute; top:0; left:0; width:9999px; height:0;"></div>
+            </div>
+        </div>
 		<div id="page" style="display: block;">		
 			<div id="container">
                 <div id="brand">
@@ -82,6 +116,15 @@
                     <p class="float-floating-sentence">We are very cool</p>
                     <p class="float-floating-response">And we are damn evil!</p>
                     <p class="float-exclamation"><span class="sentence">Actually, I DON'T LIKE EXCLAMATION MARKS!</span><span class="response">I'M TOO!</span></p>
+                </div>
+                <div id="colophon">
+                    <div id="colophon-notes">
+                        <h2>Thanks</h2>
+                        <p>Hat tip to you for dropping by!</p>
+                        <p>I would like you to stay here a bit more, so I hide <strong>Easter egg</strong> for your viewing delight.</p>
+                        <p>Happy hunting!</p>
+                        <p>Best regards,</br>Petr</p>
+                    </div>
                 </div>
             </div>
             <section id="cat" class="cat" style="position: relative;">

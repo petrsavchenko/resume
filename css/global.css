@@ -325,7 +325,7 @@ div#brand img.au-flag {
 	top: 323px;
 	left: 552px;
 	width: 20px;
-    height: 12px;
+    height: 11px;
     opacity: 0.7;
 	z-index: 61;
 }
@@ -415,7 +415,7 @@ div#social .blah {
 div#social .linkedIn {
 	z-index: 30;
 	top: 180px;
-	left: 228px;
+	left: 226px;
 	width: 140px;
 	height: 110px;
 }
@@ -428,8 +428,8 @@ div#social .linkedIn a {
 
 div#social .job {
 	z-index: 31;
-	top: 185px;
-	left: 342px;
+	top: 183px;
+	left: 339px;
 	width: 90px;
 	height: 73px;
 	background-image: url(../img/layout/balloon-social-comment-job.png);
@@ -840,6 +840,42 @@ div#floating-talk .float-floating-response {
 	background-image: url(../img/layout/balloon-float-floating-response.png);
 }
 /* END Floatink Talk */
+
+/* BEGIN Colophon */
+div#colophon * {
+	display: none;
+}
+
+div#colophon-notes h2 {
+	margin-bottom: 20px;
+	color: #8CC63F;
+}
+
+div#colophon-notes div.hr {
+  height: 4px;
+  background: transparent url(../img/layout/hr-tile-pattern.jpg) center left repeat-x;
+  margin-bottom: 20px;
+}
+
+div#colophon-notes div.hr hr {
+  display: none;
+}
+
+div#colophon-notes a,
+div#colophon-notes a:visited {
+	color: #FFF;
+	text-decoration: none;
+	background-color: #00602B;
+	padding: 1px 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+div#colophon-notes a:hover {
+	background-color: #004921;
+	color: #FFF;
+}
+/* END Colophon */
 
 /*CATTY */
 
