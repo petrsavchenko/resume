@@ -2,72 +2,111 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Petr Savchenko</title>
-		<link href="css/global.css" rel="stylesheet" type="text/css" media="screen">
+        <title>Petr Savchenko</title>
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/global.css"/>
+        <link rel="stylesheet" href="css/colorbox.css"/>
+        <link rel="stylesheet" href="css/nyan.css"/>
                 
         <script src="js/jquery-1.4.1.min.js"></script>
         <script src="js/jquery.backgroundPosition.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.colorbox.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/global.js"></script>
+        <script src="js/nyan.js"></script>
 	</head>
 	<body>
-		<div id="page" style="display: block;">		
+        <div id="cboxOverlay" style="display: none;"></div>
+        <div id="colorbox" style="padding-bottom: 57px; padding-right: 28px; display: none;">
+            <div id="cboxWrapper">
+                <div>
+                    <div id="cboxTopLeft" style="float: left;"></div>
+                    <div id="cboxTopCenter" style="float: left;"></div>
+                    <div id="cboxTopRight" style="float: left;"></div>
+                </div>
+                <div>
+                    <div id="cboxMiddleLeft" style="float: left;"></div>
+                    <div id="cboxContent" style="float: left;">
+                        <div id="cboxLoadedContent" class=" " style="width: 0px; height: 0px;"></div>
+                        <div id="cboxLoadingOverlay" class=" "></div>
+                        <div id="cboxLoadingGraphic" class=" "></div>
+                        <div id="cboxTitle" class=" "></div>
+                        <div id="cboxCurrent" class=" "></div>
+                        <div id="cboxSlideshow" class=" "></div>
+                        <div id="cboxNext" class=" "></div>
+                        <div id="cboxPrevious" class=" "></div>
+                        <div id="cboxClose" class=" "></div>
+                        <div id="cboxMiddleRight" style="float: left;"></div>
+                    </div>
+                    <div>
+                        <div id="cboxBottomLeft" style="float: left;"></div>
+                        <div id="cboxBottomCenter" style="float: left;"></div>
+                        <div id="cboxBottomRight" style="float: left;"></div>
+                    </div>
+                </div>
+                <div style="position:absolute; top:0; left:0; width:9999px; height:0;"></div>
+            </div>
+        </div>
+		<div id="page" style="display: block;">
 			<div id="container">
                 <div id="brand">
                     <h1 class="name"><a class="url" href="http://petrsavchenko.ru" title="Savchenko">Savchenko</a></h1>
-                    <p class="tagline">Савченко Петр - свободный художник</p>
+                    <p class="tagline">Do whatever sets your heart on fire</p>
                     <p class="copyright">
-						<span>© 2018</span> 
+                        <span>© <script>document.write(new Date().getFullYear())</script></span>
+                        <a class="colophon-call cboxElement" href="#colophon" title="Info!" style="background-position: 5.73182px 2.26818px;">Info!</a>
 					</p>
-
-                    <p class="welcome">Всем привет! Я <strong class="fn n"><span class="given-name">Петр</span> <span class="family-name">Савченко</span></strong>, бла бла бла бла... из Астрахани.</p>
+                    <p class="welcome">Howdy! I am<strong class="fn n"><span class="given-name">Petr</span><span class="family-name">Savchenko</span></strong>a senior full stack developer and scrum master</p>
                     <p class="contact">
-						<span>Возьми и напиши: </span>
-						<a class="email" href="mailto:petr.savchenko@outlook.com" title="Email" style="background-position: 4.680089485458613px 8.149888143176733px;">petr.savchenko@outlook.com</a>
+						<span>Email me: </span>
+						<a class="email" href="mailto:petr.savchenko@hotmail.com" title="Email" style="background-position: 4.680089485458613px 8.149888143176733px;">petr.savchenko@hotmail.com</a>
 					</p>
-
-                    <img class="petr-savchenko-illustration" src="img/cnt/petr-savchenko-illustration.png" alt="An illustration of Petr Savchenko's posing confident" width="146" height="292">
+                    <img class="petr-savchenko-illustration" src="img/cnt/petr-savchenko-illustration.png" alt="An illustration of Petr Savchenko's posing confident">
+                    <img class="au-flag" src="img/cnt/au-flag.png" alt="Australian flag pinned on the Petr Savchenko's chest">
                     <img class="big-tree" src="img/cnt/tree-big.png" alt="Big tree" width="442" height="506">
                     <img class="small-tree" src="img/cnt/tree-small.png" alt="Small tree" width="178" height="226">
                     <img class="blue-rumba" src="img/cnt/blue-rumba-illustration.gif" alt="Hidden blue Rumba climbing the big tree" width="300" height="320">
                 </div>
                 <div id="social">
-
-                    <h2>Давайте дружить</h2>
+                    <h2>Let's be friends</h2>
                     <dl>
                         <dt class="facebook"><a class="non-html" href="https://www.facebook.com/PetrSavchenko" title="Facebook" style="background-position: 2.8277310924369745px 2.1722689075630255px;">Facebook<em></em></a></dt>
-                        <dd class="smile">;)</dd>
+                        <dd class="blah">Blah!</dd>
 
-                        <dt class="vk"><a class="non-html" href="http://vk.com/petrsavchenko" title="VK" style="background-position: 3.1566265060240966px 2.274698795180723px;">VK<em></em></a></dt>
-						<dd class="love">Люблю</dd>
+                        <dt class="instagram"><a class="non-html" href="https://www.instagram.com/petrsavchenkooo" title="Instagram" style="background-position: 3.1566265060240966px 2.274698795180723px;">Instagram<em></em></a></dt>
+						<dd class="love">Love</dd>
 
-                        <dt class="twitter"><a class="non-html" href="https://twitter.com/PetrSavchenkooo" title="Twitter" style="background-position: 5.084782608695652px 7.802173913043478px;">Twitter<em></em></a></dt>
-                        <dd class="rarely">Редко</dd>
+                        <dt class="github"><a class="non-html" href="https://github.com/petrsavchenko" title="Github" style="background-position: 5.084782608695652px 7.802173913043478px;">Github<em></em></a></dt>
+                        <dd class="code"></dd>
 						
-						<dt class="blogger"><a class="non-html" href="http://savchenkopetr.blogspot.ru/" title="Blogger" style="background-position: 0.40591966173361527px 5.2706131078224105px;">Blogger<em></em></a></dt>
-                        <dd class="write">Пописываю иногда</dd>
+						<dt class="linkedIn"><a class="non-html" href="https://www.linkedin.com/in/petrsavchenko" title="LinkedIn" style="background-position: 0.40591966173361527px 5.2706131078224105px;">LinkedIn<em></em></a></dt>
+                        <dd class="job"></dd>
                     </dl>
                 </div>
                 <div id="work">
-
                     <h2>I work at</h2>
                     <dl>
-                        <dt class="company"><a class="crazy-assembly non-html" href="http://vk.com/petrsavchenko" title="Crazy Assembly">Crazy Assembly<em></em></a></dt>
-                        <dd><span class="crazy-ideas">We have crazy ideas</span><span class="other-reality"> and its change reality!</span></dd>
+                        <dt class="company"><a class="plutora non-html" href="https://www.plutora.com" title="Plutora">Plutora<em></em></a></dt>
+                        <dd><span class="enterprise-software">Enterprise Software</span><span class="vsm"> and Value Stream Management!</span></dd>
                     </dl>
                 </div>
-                <div id="projects">
-
-                    <h2>My projects</h2>
+                <div id="tools">
+                    <h2>My current tools of choice</h2>
                     <dl>
-                        <dt class="bolt"><a class="non-html" href="http://bolt.azurewebsites.net/" title="Рекламное агентство Болт"><em>Рекламное агентство Болт</em></a></dt>
-                        <dd><span class="just-business">It's just business, baby.</span><span class="not-startup"> It's not startup!</span><!-- <span class="cc"> creative commons!</span> --></dd>
+                        <dt class="aws"><a class="non-html" href="https://www.linkedin.com/in/petrsavchenko" title="AWS"><em>AWS</em></a></dt>
+                        <dd><span class="saa">Certified Solutions Architect</span><span class="ec2-fargate-etc">EC2, Fargate, S3, Lambda and etc</span></dd>
 
-						<dt class="new"><a class="non-html" href="http://vk.com/petrsavchenko" title="New idea"><em>New idea!</em></a></dt> 
-                        <dd><span class="rock">Rock!</span><span class="excite-imagination"> excite the imagination!</span></dd> 
+						<dt class="agile"><a class="non-html" href="https://www.linkedin.com/in/petrsavchenko" title="Agile Development"><em>Agile Development</em></a></dt> 
+                        <dd><span class="csm">Certifed Scrum Master</span><span class="kanban">Kanban</span></dd> 
 
-                        <dt class="crowdadvertising"><a class="non-html" href="http://crowdadvertising.ru" title="CrowdAdvertising">CrowdAdvertising<em></em></a></dt>
-                        <dd><span class="tatoos">Tatoos, homes, grass! </span><span class="through-people non-html"><em>Advertising for people and through people</em></span></dd>
+                        <dt class="net-core"><a class="non-html" href="https://www.linkedin.com/in/petrsavchenko" title=".Net Core">.Net Core<em></em></a></dt>
+                        <dd><span class="ef">Entity Framework</span><span class="redis"><em>Redis</em></span><span class="elasticsearch"><em>Elasticsearch</em></span></dd>
+
+                        <dt class="react"><a class="non-html" href="https://www.linkedin.com/in/petrsavchenko" title="React">React<em></em></a></dt>
+                        <dd><span class="ts">Typescript</span><span class="jest"><em>Jest</em></span></dd>
                     </dl>
                 </div>
                 <div id="floating-talk">
@@ -77,9 +116,56 @@
                     <p class="dashed-four">We're... what?!</p>
                     <p class="float-floating-sentence">We are very cool</p>
                     <p class="float-floating-response">And we are damn evil!</p>
-                    <p class="float-exclamation"><span class="sentence">I don't like exclamation mark!</span><span class="response">!</span></p>
+                    <p class="float-exclamation"><span class="sentence">Actually, I DON'T LIKE EXCLAMATION MARKS!</span><span class="response">I'M TOO!</span></p>
                 </div>
-			</div>
-		</div>
-	</body>
+                <div id="colophon">
+                    <div id="colophon-notes">
+                        <h2>Thanks</h2>
+                        <p>Hat tip to you for dropping by!</p>
+                        <p>I would like you to stay here a bit more, so I hid <strong>Easter egg</strong> for your viewing delight.</p>
+                        <p>Happy hunting!</p>
+                        <p>Best regards,</br>Petr</p>
+                    </div>
+                </div>
+            </div>
+            <section id="cat" class="cat" style="position: relative;">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Now your daily dose of nyan cat</h2>
+                        <hr class="star-light">
+                    </div>
+                </div>
+                <a id="audio-button" class="btn btn-default audio-button" alt="toggle audio" onclick="toggleAudio()">
+                    <span id="audio-button-icon" class="glyphicon glyphicon glyphicon glyphicon-volume-off" aria-hidden="true"></span>
+                </a>
+                <div class="cat-container">
+                    <div class="sparks-combo">
+                        <div class="spark"></div>
+                        <div class="spark"></div>
+                        <div class="spark"></div>
+                        <div class="spark"></div>
+                    </div>
+                    <div id="wave-a" class="hot rainbow"></div>
+                    <div id="wave-a" class="cold rainbow"></div>
+                    <div id="wave-b" class="hot rainbow"></div>
+                    <div id="wave-b" class="cold rainbow"></div>
+                    <div id="nyan-cat" class="frame1">
+                        <div id="tail"></div>
+                        <div id="paws"></div>
+                        <div id="pop-tarts-body">
+                            <div id="pop-tarts-body-cream"></div>
+                        </div>
+                        <div id="head">
+                            <div id="face"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <audio loop="true" id="nyan-sound">
+            <source src="audio/nyan-cat.ogg" type="audio/ogg" />
+            <source src="audio/nyan-cat.mp3" type="audio/mpeg" />
+        </audio>
+    </body>    
 </html>

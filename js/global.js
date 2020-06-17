@@ -28,8 +28,13 @@ $(document).ready(function(){
 	
 	
 	// ColorBox call
-	// $(".colophon-call").colorbox({width:"460px", inline:true, href:"#colophon-notes"});
-	
+	$(".colophon-call").colorbox({width:"460px", inline:true, href:"#colophon-notes"});
+	$(".au-flag").click(function(){
+		$('#cat').show();		
+		var scrollToX = 2310 - $(window).height();
+		$('html, body').animate({ scrollTop: scrollToX }, 4500, 'easeInOutExpo');
+		$('#audio-button').click();
+	})
 });
 
 
