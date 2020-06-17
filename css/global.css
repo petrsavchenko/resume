@@ -395,15 +395,6 @@ div#social .instagram a {
 	background-image: url(../img/layout/balloon-social-item-instagram.png);
 }
 
-/* div#social .smile {
-	z-index: 61;
-	top: 12px;
-	left: 340px;
-	width: 88px;
-	height: 82px;
-	background-image: url(../img/layout/balloon-social-comment-smile.png);
-} */
-
 div#social .blah {
 	z-index: 61;
 	top: 10px;
@@ -546,7 +537,7 @@ div#work .vsm {
 }
 /* END Work */
 
-/* BEGIN tools */
+/* BEGIN Tools */
 div#tools * {
 	text-indent: -9999px;
 	overflow: hidden;
@@ -580,20 +571,6 @@ div#tools a:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 	filter: alpha(opacity=60);
 }
-
-/* div#tools .datm {
-	z-index: 50;
-	top: 70px;
-	left: 60px;
-	width: 222px;
-	height: 164px;
-}
-
-div#tools .datm a {
-	width: 222px;
-	height: 164px;
-	background-image: url(../img/layout/balloon-tools-item-datm.png);
-} */
 
 div#tools .band {
 	z-index: 51;
@@ -868,6 +845,7 @@ div#colophon-notes a:visited {
 	text-decoration: none;
 	background-color: #00602B;
 	padding: 1px 3px;
+	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 }
@@ -878,8 +856,7 @@ div#colophon-notes a:hover {
 }
 /* END Colophon */
 
-/*CATTY */
-
+/* BEGIN CATTY */
 @font-face {
     font-family: 'suplexmentary-comic-NC';
     src: url('../fonts/suplexmentary-comic-NC.ttf') format('truetype');
@@ -892,7 +869,6 @@ div#colophon-notes a:hover {
 	display: none;
 	height: 510px;
 	padding: 85px 0 100px 0;
-	/* background: #036; */
 }
 
 .cat h2
@@ -956,3 +932,4 @@ div#colophon-notes a:hover {
     background-color: transparent;
     border-color: #aaaaaa;
 }
+/* END CATTY */

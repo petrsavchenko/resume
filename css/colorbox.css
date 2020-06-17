@@ -32,8 +32,6 @@
     #cboxBottomRight{width:14px; height:43px; background:url(../img/colorbox/controls.png) -36px -32px no-repeat;}
     #cboxMiddleLeft{width:14px; background:url(../img/colorbox/controls.png) -175px 0 repeat-y;}
     #cboxMiddleRight{width:14px; background:url(../img/colorbox/controls.png) -211px 0 repeat-y;}
-    #cboxContent{/*background:#fff;*/}
-        #cboxLoadedContent{/*margin-bottom:5px;*/}
         #cboxLoadingOverlay{background:url(../img/colorbox/loading_background.png) center center no-repeat;}
         #cboxLoadingGraphic{background:url(../img/colorbox/loading.gif) center center no-repeat;}
         #cboxTitle{position:absolute; bottom:-25px; left:0; text-align:center; width:100%; font-weight:bold; color:#7C7C7C;}
@@ -60,10 +58,14 @@ div#colophon-notes {
 
 #cboxContent{ background: #009245; }
 
+div#colophon-notes p {
+    font-size: 16px;
+}
+
 #cboxTitle{
 	display: block;
 	height: 36px;
-	height: 16px;
+	height: 15px;
 	overflow: hidden;
 	text-indent: -9999px;
 	background: transparent url(../img/colorbox/hd-info.png) top left no-repeat;
