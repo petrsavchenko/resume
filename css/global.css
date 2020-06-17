@@ -891,18 +891,6 @@ div#colophon-notes a:hover {
 	border-color: #fff;
 }
 
-.cat hr.star-light:after {
-    content: "\f005";
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
-	font-size: 2em;
-	color: #fff;
-    background-color: #18bc9c;
-}
-
 .cat-container {
     margin-top: 0px;
     position: relative;
